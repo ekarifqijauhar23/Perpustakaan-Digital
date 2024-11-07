@@ -1,0 +1,221 @@
+/* Reset beberapa gaya default */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Definisikan font dan warna dasar */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #eef2ff;
+    color: #2c3a47;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    font-family: serif;
+}
+h2 {
+    padding: 20px;
+    text-align: center;
+    font-family:initial;
+}
+h1 {
+    font-family: 'Rubik Wet Paint', cursive;
+    ;align-items: center;
+  }
+  
+
+/* Tema terang */
+.theme-light {
+    background-color: #eef2ff;
+    color: #2c3a47;
+}
+
+.theme-light .card {
+    background: #ffffff;
+    box-shadow: 6px 6px 10px rgba(0, 0, 0, 0.1), -6px -6px 10px rgba(255, 255, 255, 0.7);
+    border-left: 4px solid #3f72af;
+}
+
+.theme-light .btn {
+    background-color: #3f72af;
+    color: white;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.1), -4px -4px 8px rgba(255, 255, 255, 0.8);
+    transition: background-color 0.3s ease;
+}
+
+.theme-light .btn:hover {
+    background-color: #2e59d9;
+}
+
+/* Tema gelap */
+.theme-dark {
+    background-color: #ffffff;
+    color: #ecf0f1;
+}
+
+.theme-dark .card {
+    background: #0a4b88;
+    border-left: 4px solid #4c9ef0;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3), -4px -4px 10px rgba(255, 255, 255, 0.1);
+}
+
+.theme-dark .btn {
+    background-color: #c99e13;
+    color: white;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.3), -4px -4px 8px rgba(255, 255, 255, 0.2);
+    transition: background-color 0.3s ease;
+}
+
+.theme-dark .btn:hover {
+    background-color:#4c9ef0;
+}
+
+/* Efek bayangan neumorphism */
+.card {
+    border-radius: 12px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.1), -4px -4px 10px rgba(255, 255, 255, 0.1);
+    transition: box-shadow 0.3s ease, transform 0.2s ease;
+}
+
+.card:hover {
+    transform: scale(1.02);
+    box-shadow: 6px 6px 12px rgba(0, 0, 0, 0.2), -6px -6px 12px rgba(255, 255, 255, 0.2);
+}
+
+/* Gaya untuk input form */
+input[type="text"], input[type="number"], input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 8px;
+    border: none;
+    background: #e1e8ff;
+    box-shadow: inset 4px 4px 6px rgba(0, 0, 0, 0.1), inset -4px -4px 6px rgba(255, 255, 255, 0.8);
+    font-size: 16px;
+    transition: background 0.3s ease;
+}
+
+input[type="text"]:focus, input[type="number"]:focus, input[type="email"]:focus {
+    background: #d3dfff;
+    outline: 2px solid #3f72af;
+}
+
+/* Tombol */
+button {
+    padding: 12px 24px;
+    border: none;
+    background-color: #221f1f;
+    color: white;
+    font-size: 16px;
+    border-radius: 25px;
+    cursor: pointer;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.1), -4px -4px 10px rgba(255, 255, 255, 0.8);
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    background-color: #fa5252;
+    box-shadow: 6px 6px 14px rgba(0, 0, 0, 0.2), -6px -6px 14px rgba(255, 255, 255, 0.2);
+}
+
+/* Tampilan daftar buku */
+.book-card {
+    background: #ffffff;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2), -4px -4px 8px rgba(255, 255, 255, 0.8);
+    border-left: 4px solid #4a90e2;
+}
+
+.book-card .card-title {
+    font-size: 22px;
+    font-weight: bold;
+    color: #4a90e2;
+    padding: 6px;
+}
+
+.book-card .card-text {
+    font-size: 14px;
+    margin-bottom: 10px;
+    padding: 6px;
+}
+
+.book-card .edit-btn, .book-card .delete-btn {
+    margin-top: 10px;
+    background-color: #4a90e2;
+    color: white;
+    padding: 5px 12px;
+    border-radius: 12px;
+    transition: background-color 0.3s ease;
+}
+
+.book-card .edit-btn:hover, .book-card .delete-btn:hover {
+    background-color: #357abd;
+}
+
+/* Tampilan toggle tema */
+#theme-toggle {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background: transparent;
+    border: none;
+    font-size: 30px;
+    cursor: pointer;
+    color: #e4af1eb0;
+    transition: color 0.3s ease;
+}
+
+#theme-toggle:hover {
+    color: #e4af1eb0;
+}
+
+/* Gaya umum untuk header dan footer */
+header, footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #3f72af;
+    color: #f0f3f6;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    font-size: 14px;
+}
+
+.d-flex.justify-content-end .btn {
+    margin-left: 5px; 
+  }
+  
+  .d-flex.justify-content-end .edit-btn {
+    background-color: #dbb850;
+  }
+  
+  .d-flex.justify-content-end .delete-btn {
+    background-color: #850b17;
+  }
+
+  #filter-form input {
+    margin-right: 10px;
+  }
+  
+  #filter-form button {
+    border-radius: 50px;
+    padding: 8px 15px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+  }
+  
+  #filter-form button:hover {
+    background-color: #0056b3;
+  }
+  
+  #filter-form {
+    display: flex;
+    gap: 10px;
+    justify-content: flex-start;
+  }
+  
